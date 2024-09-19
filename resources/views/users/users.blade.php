@@ -2,8 +2,11 @@
 
 @section('contenido')
     <section class="content-header">
-    <h1 class="pull-left">Lista de Usuarios</h1>
-    
+    <div class="row">
+        <div class col>
+            <h1 class="pull-left">Lista de Usuarios</h1>
+            </div>
+    </div>
     </section>
 
 @endsection
