@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
+use App\Models\Detail;
 
 Route::get('/', function () {
     return view('templates/index');
 })->name('index');
-
 
 Route::get('/productos', function () {
     return view('products/products');
@@ -20,4 +21,15 @@ Route::get('/reportes', function () {
 Route::get('/usuarios', function () {
     return view('users/users');
 })->name('usuarios');
+
+Route::group(['middleware'=>'auth'], function(){
+
+
+}
+
+);
+
+Rout::get('prueba', function(){
+    return Detail::all();
+});
 
