@@ -5,7 +5,7 @@ use App\Http\Controllers;
 use App\Models\Detail;
 
 Route::get('/', function () {
-    return view('templates/index');
+    return view('index');
 })->name('index');
 
 Route::get('/productos', function () {
@@ -29,7 +29,7 @@ Route::group(['middleware'=>'auth'], function(){
 
 );
 
-Rout::get('prueba', function(){
+Route::get('prueba', function(){
     return Detail::all();
 });
 

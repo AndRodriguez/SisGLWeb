@@ -34,7 +34,15 @@
     
 </head>
 
-<body>
-    
+<body class="sidebar-mini">
+    <div class="wrapper">
+        <a href="{{!!url('index'}}" class="lgo">
+            Sis<strong>GLWeb</strong>
+        </a>
+    </div>
+    <nav>
+
+    </nav>
+
 </body>
 </html>

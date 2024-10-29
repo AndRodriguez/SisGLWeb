@@ -1,4 +1,4 @@
-@extends('templates.index')
+@extends('index')
 
 @section('contenido')
     <section class="content-header">
